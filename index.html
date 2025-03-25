@@ -3,31 +3,33 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>有影喔 App - iPhone 14 Pro Max Wireframe</title>
+<title>有影喔 App - iPhone 14 Pro Max 完整版</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #f7f7f7; margin: 0; padding: 0; max-width: 450px; margin: auto; }
-  header, nav { background: #fff; padding: 12px; text-align: center; font-weight: bold; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-  .content { padding: 16px; display: none; }
-  .content.active { display: block; }
-  .card { display: flex; background: #fff; padding: 10px; margin-bottom: 12px; align-items: center; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1);}
-  .poster { width: 80px; height: 80px; background: #ccc; border-radius: 6px; }
-  .info { flex: 1; margin-left: 12px; }
-  .title { font-size: 16px; font-weight: bold; }
-  .status { font-size: 13px; color: #666; margin-top: 5px; }
-  .btn { background: #333; color: #fff; padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer;}
-  .news-item, .notify-item { background: #fff; padding: 12px; margin-bottom: 12px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-  .tag { display: inline-block; background: #333; color: #fff; padding: 3px 8px; font-size: 12px; border-radius: 6px; margin-bottom: 8px; }
-  .toggle { margin: 10px 0; }
-  nav { position: fixed; bottom: 0; width: 100%; max-width: 450px; display: flex; justify-content: space-around; }
-  nav a { flex: 1; text-decoration: none; color: #333; padding: 10px 0; text-align: center; }
-  nav a.active { background: #333; color: #fff; border-radius: 8px 8px 0 0; }
+  html, body {{ margin: 0; padding: 0; width: 100%; height: 100%; background: #f7f7f7; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }}
+  body {{ max-width: 430px; margin: auto; overflow: hidden; }}
+  header {{ position: fixed; top: 0; width: 100%; max-width: 430px; background: #fff; padding: 12px; text-align: center; font-weight: bold; box-shadow: 0 1px 3px rgba(0,0,0,0.1); z-index: 10; }}
+  nav {{ position: fixed; bottom: 0; width: 100%; max-width: 430px; background: #fff; display: flex; justify-content: space-around; box-shadow: 0 -1px 3px rgba(0,0,0,0.1); z-index: 10; }}
+  nav a {{ flex: 1; text-decoration: none; color: #333; padding: 10px 0; text-align: center; }}
+  nav a.active {{ background: #333; color: #fff; border-radius: 8px 8px 0 0; }}
+  .scrollable {{ position: absolute; top: 52px; bottom: 52px; left: 0; right: 0; overflow-y: auto; padding: 16px; }}
+  .content {{ display: none; }}
+  .content.active {{ display: block; }}
+  .card, .news-item, .notify-item {{ background: #fff; padding: 12px; margin-bottom: 12px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }}
+  .poster {{ width: 80px; height: 80px; background: #ccc; border-radius: 6px; float: left; margin-right: 12px; }}
+  .info {{ overflow: hidden; }}
+  .title {{ font-size: 16px; font-weight: bold; }}
+  .status {{ font-size: 13px; color: #666; margin-top: 5px; }}
+  .btn {{ background: #333; color: #fff; padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; float: right; }}
+  .tag {{ display: inline-block; background: #333; color: #fff; padding: 3px 8px; font-size: 12px; border-radius: 6px; margin-bottom: 8px; }}
+  .toggle {{ margin: 10px 0; }}
 </style>
 </head>
 <body>
+
 <header>🎬 有影喔 App</header>
-
-<!-- 後續將動態填入 tab 內容與JS -->
-
+<div class="scrollable">
+<!-- 後續動態填入 Watchlist / News / Notification / Setting / Manual -->
 <div class="content active" id="tab-watchlist"><h2>我的追蹤</h2><div class="card"><div class="poster"></div><div class="info"><div class="title">奧本海默</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">芭比</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">沙丘：第二部</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">蜘蛛人：穿越新宇宙</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">不可能的任務：致命清算</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">海底總動員3</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">黑豹2：瓦干達萬歲</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">阿凡達：水之道</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">復仇者聯盟5：康之王朝</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">角頭－浪流連</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">灌籃高手 THE FIRST SLAM DUNK</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">名偵探柯南：黑鐵的魚影</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">小丑2：雙重瘋狂</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">尚氣與十環傳奇2</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div><div class="card"><div class="poster"></div><div class="info"><div class="title">花月殺手</div><div class="status">Netflix 已上架</div></div><button class="btn">詳情</button></div></div><div class="content" id="tab-news"><h2>最新消息</h2><div class="news-item"><div class="title">奧本海默：最新預告片釋出，粉絲嗨翻！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">芭比：主角選角曝光，網友熱議中！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">沙丘：第二部：導演親曝拍攝花絮，真實震撼畫面曝光！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">蜘蛛人：穿越新宇宙：票房破億，創下系列新高！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">不可能的任務：致命清算：上映首週即登上Netflix冠軍！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">海底總動員3：二刷口碑爆棚，堪稱年度神作！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">黑豹2：瓦干達萬歲：場景拍攝地公開，粉絲朝聖必訪！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">阿凡達：水之道：獲奧斯卡最佳影片提名！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">復仇者聯盟5：康之王朝：上映日期變更，官方正式公告！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">角頭－浪流連：特別版4DX版本登場，體感震撼！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">灌籃高手 THE FIRST SLAM DUNK：原聲帶搶先釋出，音樂製作陣容超豪華！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">名偵探柯南：黑鐵的魚影：官方舉辦特映場，限量票開搶！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">小丑2：雙重瘋狂：幕後製作團隊專訪，完整揭秘！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">尚氣與十環傳奇2：續集確定開拍，原班人馬回歸！</div><div class="status">新聞內容詳情介紹...</div></div><div class="news-item"><div class="title">花月殺手：導演爆料劇情反轉藏彩蛋！</div><div class="status">新聞內容詳情介紹...</div></div></div><div class="content" id="tab-notification"><h2>通知中心</h2><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《奧本海默`》即將在全台戲院上映！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《芭比`》正式上架 Netflix！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《沙丘：第二部`》成為本月最熱門影片！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《蜘蛛人：穿越新宇宙`》獲選金馬獎最佳影片！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《不可能的任務：致命清算`》4K修復版重映確定！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《海底總動員3`》上映一週票房破三億！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《黑豹2：瓦干達萬歲`》最新劇照曝光，粉絲暴動！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《阿凡達：水之道`》舉辦粉絲見面會！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《復仇者聯盟5：康之王朝`》加入Disney+串流片單！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《角頭－浪流連`》追加彩蛋片段，值得二刷！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《灌籃高手 THE FIRST SLAM DUNK`》獲得IMDb高達9.1分好評！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《名偵探柯南：黑鐵的魚影`》OTT同步上架，隨時可看！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《小丑2：雙重瘋狂`》上映首日突破百萬人次觀影！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《尚氣與十環傳奇2`》原聲帶獲得格萊美獎提名！</div></div><div class="notify-item"><div class="tag">📽 電影院</div><div class="title">《花月殺手`》將參展柏林影展，國際矚目！</div></div></div>
 <div class="content" id="tab-setting">
 <h2>通知設定</h2>
@@ -44,6 +46,8 @@
   <button class="btn" style="margin-top: 10px;">送出回報</button>
 </div>
 
+</div>
+
 <nav>
   <a href="#" class="tab-btn active" data-target="tab-watchlist">追蹤</a>
   <a href="#" class="tab-btn" data-target="tab-news">新聞</a>
@@ -55,16 +59,15 @@
 <script>
   const tabs = document.querySelectorAll('.tab-btn');
   const contents = document.querySelectorAll('.content');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', (e) => {
+  tabs.forEach(tab => { tab.addEventListener('click', (e) => {
       e.preventDefault();
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       const target = tab.dataset.target;
       contents.forEach(c => c.classList.remove('active'));
       document.getElementById(target).classList.add('active');
-    });
-  });
+  });});
 </script>
+
 </body>
 </html>
