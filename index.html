@@ -115,6 +115,16 @@
 </nav>
 
 <script>
+  // ✅ 點擊整個 .card 跳轉詳情頁
+  document.querySelectorAll('#tab-watchlist .card').forEach(card => {
+    card.style.cursor = 'pointer'; // 滑鼠變手指
+    card.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      document.getElementById('tab-detail').classList.add('active');
+    });
+  });
+
   const tabs = document.querySelectorAll('.tab-btn');
   const contents = document.querySelectorAll('.content');
   tabs.forEach(tab => {
