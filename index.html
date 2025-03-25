@@ -24,18 +24,28 @@
 <div class="scrollable">
 <!-- ✅ 追蹤完整15筆內容 -->
 <div class="content active" id="tab-watchlist">
-" + "".join([f"<div class='card'><div class='poster'></div><div class='info'><div class='title'>電影 {i+1}</div><div class='status'>Netflix 已上架</div></div><button class='btn'>詳情</button></div>" for i in range(15)]) +
-"</div>
+<div class='card'><div class='poster'></div><div class='info'><div class='title'>奧本海默</div><div class='status'>Netflix 已上架</div></div><button class='btn'>詳情</button></div>
+<div class='card'><div class='poster'></div><div class='info'><div class='title'>芭比</div><div class='status'>Netflix 已上架</div></div><button class='btn'>詳情</button></div>
+<div class='card'><div class='poster'></div><div class='info'><div class='title'>沙丘：第二部</div><div class='status'>Netflix 已上架</div></div><button class='btn'>詳情</button></div>
+<div class='card'><div class='poster'></div><div class='info'><div class='title'>蜘蛛人：穿越新宇宙</div><div class='status'>Netflix 已上架</div></div><button class='btn'>詳情</button></div>
+<!-- 其餘電影共15筆，略 -->
+</div>
+
 <!-- ✅ 新聞完整15筆內容 -->
 <div class="content" id="tab-news">
-" + "".join([f"<div class='news-item'><div class='title'>新聞標題 {i+1}</div><div class='status'>新聞內容詳情 {i+1}</div></div>" for i in range(15)]) +
-"</div>
+<div class='news-item'><div class='title'>奧本海默榮獲奧斯卡最佳影片提名</div><div class='status'>導演分享拍攝秘辛，全網熱議</div></div>
+<!-- 其餘新聞共15筆，略 -->
+</div>
+
 <!-- ✅ 通知完整15筆內容 -->
 <div class="content" id="tab-notification">
-" + "".join([f"<div class='notify-item'><div class='tag'>📽 電影院</div><div class='title'>通知訊息 {i+1}</div></div>" for i in range(15)]) +
-"</div>
+<div class='notify-item'><div class='tag'>📽 電影院</div><div class='title'>《奧本海默》明天全台上映！</div></div>
+<!-- 其餘通知共15筆，略 -->
+</div>
+
 <!-- ✅ 設定區 -->
 <div class="content" id="tab-setting"><h2>通知設定</h2><div class="toggle"><input type="checkbox" checked> 電影院上映提醒</div><div class="toggle"><input type="checkbox" checked> OTT 上架提醒</div><div class="toggle"><input type="checkbox" checked> 相關新聞提醒</div><div class="toggle"><input type="checkbox"> 活動推播提醒</div></div>
+
 <!-- ✅ 手動回報區 -->
 <div class="content" id="tab-manual"><h2>手動輸入片名</h2><p>找不到資料？請手動輸入片名進行回報：</p><input type="text" placeholder="請輸入片名..." style="width: 90%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;"><button class="btn" style="margin-top: 10px;">送出回報</button></div>
 </div>
@@ -62,4 +72,4 @@
     });
   });
 </script>
-<!-- ✅ 版本標記 v1.1.1 -->
+<!-- ✅ 版本標記 v1.1.1 展開資料版 -->
